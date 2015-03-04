@@ -792,7 +792,7 @@ animation-name: fadeInUp;
 		#hello { max-height:560px;  }
 		nav.navi-container { position: fixed; bottom: inherit; top: 0; }
 		.hel { top: 55%; }
-		.email-add { font-size: 35px; line-height: 35px; }
+		.email-add { font-size: 25px; line-height: 35px; }
 		}
 
 @media only screen and (max-width: 350px) {
