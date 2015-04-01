@@ -1,0 +1,27 @@
+---
+layout: base
+---
+<div class="wrapper">
+    <header>
+        {% if site.sg.logo %}
+        <div class="logo-container">
+          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.sg.logo }}')"></a>
+        </div>
+        {% endif %}
+
+        {% if site.sg.author %}
+        <div class="author-container"><h1>{{ site.sg.author }}</h1></div>
+        {% endif %}
+
+        {% if site.sg.tagline %}
+        <div class="tagline-container"><p>{{ site.sg.tagline }}</p></div>
+        {% endif %}
+    </header>
+    <main>
+      {% if site.sg.include_content %}
+      <div class="content">
+        {% include content.html %}
+      </div>
+      {% endif %}
+    </main>
+</div>
